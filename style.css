@@ -668,6 +668,38 @@ a {
     height: 30px;
 }
 
+/* --- Testimonials / Reviews Styling --- */
+.testimonials .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- Mobile Layout Polish --- */
+@media (max-width: 768px) {
+    .floating-badge {
+        bottom: 12px;
+        left: 12px;
+        padding: 8px 12px;
+        max-width: 85%;
+    }
+
+    .floating-wa {
+        bottom: 20px;
+        right: 16px;
+        z-index: 999;
+    }
+}
+
+
 @media (max-width: 768px) {
     .faq-container {
         padding: 10px 20px;
